@@ -1,19 +1,20 @@
-
 /*=======================================================================
  *Author:Febby Gunawan
  *Project:Google Search - Clone
  *
  =======================================================================*/
 
- /*initialize eric meyer reset*/
+/*initialize eric meyer reset*/
 
 @import "reset";
 
 //additional reset
 
-body{
-  font-family: Arial,sans-serif;
-  min-width:840px;
+body {
+    font-family: Arial,sans-serif;
+    margin: 0 auto;
+    padding: 0px;
+    min-width: 980px;
 }
 
 a {
@@ -22,14 +23,12 @@ a {
 }
 
 /* Required to make the page 100% of window size. */
- html, body {
+html, body {
     height: 100%;
 }
-/* Not required but does remove normal browser margin/padding */
- body {
-    margin: 0px;
-    padding: 0px;
-}
+
+
+
 /*=======================================================================
  *
  * Buttons
@@ -45,11 +44,11 @@ a {
         text-decoration: none;
         border-color: #c6c6c6;
         color: #222;
-        -webkit-box-shadow: 0 1px 0 rgba(0,0,0,.15);
-        box-shadow: 0 1px 0 rgba(0,0,0,.15);
+        -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
+        box-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
         background: #f8f8f8;
-        background: -webkit-linear-gradient(top,#f8f8f8,#f1f1f1);
-        background: linear-gradient(top,#f8f8f8,#f1f1f1);
+        background: -webkit-linear-gradient(top, #f8f8f8, #f1f1f1);
+        background: linear-gradient(top, #f8f8f8, #f1f1f1);
     }
 }
 
@@ -97,12 +96,12 @@ nav {
     padding-right: 30px;
     font-size: 0.9em;
     li {
-    list-style-type: none;
-    display: inline-block;
-    line-height: 50px;
-    min-width: 40px;
-    padding: 2.5px;
-}
+        list-style-type: none;
+        display: inline-block;
+        line-height: 50px;
+        min-width: 40px;
+        padding: 2.5px;
+    }
 }
 
 .nav-link {
@@ -126,39 +125,27 @@ a.nav-link {
     padding-right: 20px;
 }
 
-// .img-bubble-small {
-//     width: 35px;
-//     height: 35px;
-//     border-radius: 100%;
-// }
-
 /*=======================================================================
  *
  * Main section stuff
  *
  =======================================================================*/
-.wrapper{
-  min-height: 100%;
+.wrapper {
+    min-height: 100%;
     height: auto !important;
     height: 100%;
     /*Here we set negative bottom margin based on height of the footer */
     margin: 0px 0px -42px 0px;
 }
-.apps {
-    display: inline-block;
-    outline: none;
-    vertical-align: middle;
-    box-sizing: border-box;
-    height: 30px;
-    width: 30px;
-    background: url("http://imgur.com/UWgcnis.png") no-repeat center;
+
+#grid {
+    width: 20px;
+    vertical-align: text-bottom;
 }
 
 #main {
-    // margin: 2em 0;
     height: 80%;
     text-align: center;
-    
     input[type="submit"] {
         min-width: 5%;
         font-weight: bold;
@@ -167,11 +154,12 @@ a.nav-link {
 }
 
 #google-icon {
-margin-top: 10%;
-   width:269px;
+    margin-top: 10%;
+    width: 269px;
 }
 
 #search-box {
+    background: url("../img/microphone.png") no-repeat 100% 50%;
     padding: 0.05em 0.5em;
     display: block;
     margin: 1% auto 0 auto;
@@ -201,18 +189,14 @@ margin-top: 10%;
  *
  =======================================================================*/
 footer {
-  // width: 100%;
-  // padding-top:42px;
-  height:42px;
+    height: 15px;
     background-color: #f2f2f2;
-    // position: absolute;
-    // left: 0;
-    // bottom: 0;
-    // right: 0;
     font-family: sans-serif;
     font-size: 0.8em;
-    .nav-link {
-        padding: 3.5%;
+    li {
+        display: inline;
+        padding: 5px 10px;
+        line-height: 40px;
     }
 }
 
@@ -221,18 +205,17 @@ footer {
  * Formatting
  *
  =======================================================================*/
-.left, .right {
-    width: 30%;
-}
 
 .left {
+    position: relative;
     float: left;
-    text-align: left;
-    margin-left: 1%;
+    display: inline-block;
+    left: 8px;
 }
 
 .right {
+    display: inline-block;
+    position: relative;
     float: right;
-    text-align: right;
-    margin-right: 1%;
+    right: 30px;
 }
